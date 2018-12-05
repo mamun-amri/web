@@ -1,0 +1,7 @@
+body{font-family:Arial;font-size: 10pt;margin: 5px;padding: 0;}
+.mu{float:left;margin-left: 5px;}
+table{border:1px solid #000;margin:1px;}
+th{background:#E9E9E9;}
+.nm_bengkel{font-size:12pt;}
+
+@media print {input.noPrint { display: none; }}

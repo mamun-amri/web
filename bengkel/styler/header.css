@@ -1,0 +1,115 @@
+.header{
+	top: 0px;
+	width: 100%;
+	height: 35px;
+	padding: 0px;
+	margin: 0px;
+	color: #ffffff;
+	background: #2099D6;
+	position: fixed;
+	z-index:1000;
+}
+.kiri{
+	float:left;
+	width:auto;
+	vertical-align:middle;
+}
+.logo{
+	float: left;
+	margin: 3px 10px 5px 10px;
+	padding: 0;
+	vertical-align: middle;
+}
+.logo img{
+	width: 30px;
+	height: 30x;
+	border-radius: 20px;
+}
+.logo img:hover{
+	
+}
+.namabengkel{
+	float: left;
+	margin: auto;
+	padding: 5px;
+	text-align: left;
+	font-size: 16pt;
+	color:#ffffff;
+}
+
+.kanan{
+	height:34px;
+	width:auto;
+	float:right;
+	right: 0px;
+	display: inline;
+}
+
+.header-nav {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;	
+}
+.header-nav li {
+	color:#fff;
+	line-height: 18px;
+	text-indent: 0px;
+}
+.header-nav li img{
+	float: left;
+	margin: 0px 10px 0px 0px  ;
+	height: 16px;
+	width: 16px;
+}
+.header-nav li a {
+	display: block;
+	text-decoration: none;
+}
+.header-nav li a:active,
+.header-nav li a:focus {
+	text-decoration: none;
+}
+.menu,
+.keluar{
+	padding :10px 5px 7px 5px ;
+	margin:0;
+	float: left;
+	text-align: center;
+	vertical-align: top;
+}
+.menu:hover{
+	background: #fff;
+	color:#4D4D4D;
+}
+.keluar:hover{
+	background: #FF4F4F;
+	color:#4D4D4D;
+}
+.menu:active,
+
+.kanan > a,
+.kanan > a:link{
+	text-decoration: none;
+	color: #fff;
+}
+.footer{
+	bottom: 0px;
+	width: 100%;
+	background: #ddd;
+	position: fixed;
+	float:right;
+	height: 20px;
+	font-size: 10pt;
+	padding: 1px;
+	margin-top:20px;
+}
+.footer-wrapper{
+	margin: 3px 15px auto;
+	text-align: right;
+	width:auto;
+	float:right;
+	
+}
+
+
+
