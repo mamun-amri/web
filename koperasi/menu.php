@@ -13,7 +13,7 @@
 <li><a href="?module=simpanan">Simpanan</a></li>
 <li><a href="?module=pinjaman">Pinjaman</a></li>
 <li><a href="?module=bayar">Bayar Pinjaman</a></li>
-</ul>s
+</ul>
 </li>
 <li>
 <a href="#">Laporan</a>

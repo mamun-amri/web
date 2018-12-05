@@ -1,5 +1,5 @@
 <?php
-	
+
 ?>
 <?php
  require('fpdf.php');
@@ -9,7 +9,7 @@ $tgl = date('d-M-Y');
 
 $pdf = new FPDF();
 
-$pdf->addPage(patroit,A4);
+$pdf->addPage('patroit','A4');
 $pdf->setAutoPageBreak(true);
 $pdf->image('logo_koperasi.jpg',15,10,25,25);
 $pdf->setFont('Times','b',14);
@@ -24,7 +24,7 @@ $yi = 50;
 $ya = 44;
 $pdf->setFont('Times','',14);
 	$pdf->line(15, 34,200, 34);
-		
+
 $pdf->setFont('Times','b',8);
 $pdf->setFillColor(222,222,222);
 $pdf->setXY(30,$ya);
@@ -35,11 +35,11 @@ $pdf->CELL(20,6,'Tgl Setoran',1,0,'C',1);
 $pdf->CELL(60,6,'Jumlah Setoran',1,0,'C',1);
 
 
-
+$row = 5;
 $ya = $yi + $row;
 
 	// Query untuk merelasikan kedua tabel
-$sql = mysql_query("select * FROM simpanan");
+$sql = mysql_query("SELECT * FROM simpanan");
 $jml = mysql_num_rows($sql);
 $i = 1;
 $no = 1;
@@ -51,18 +51,18 @@ $pdf->setXY(30,$ya);
 $pdf->setFont('Times','',8);
 $pdf->setFillColor(255,255,255);
 $pdf->cell(5,6,$no,1,0,'C',1);
-$pdf->cell(25,6,$data[noanggota],1,0,'C',1);
-$pdf->cell(25,6,$data[id_jenis],1,0,'L',1);
-$pdf->cell(20,6,$data[tgl],1,0,'L',1);
-$pdf->cell(60,6,$data[jumlah],1,0,'L',1);
+$pdf->cell(25,6,$data['noanggota'],1,0,'C',1);
+$pdf->cell(25,6,$data['id_jenis'],1,0,'L',1);
+$pdf->cell(20,6,$data['tgl'],1,0,'L',1);
+$pdf->cell(60,6,$data['jumlah'],1,0,'L',1);
 
 
 $ya = $ya+$row;
 $no++;
 $i++;
 	}
-	
 
-$pdf->Output('Laporan Simpanan.pdf', I);
+
+$pdf->Output('Laporan Simpanan.pdf', 'I');
 
 ?>
